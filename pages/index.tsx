@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Home: NextPage = () => {
   return (
     <section>
-      <div>Hero section</div>
+      <div></div>
     </section>
   )
 }
