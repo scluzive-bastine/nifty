@@ -8,10 +8,12 @@ import Grid from '../components/Home/Grid'
 import vbg from '../images/vbg.svg'
 import hape from '../images/hape.svg'
 import clone from '../images/clone.svg'
+import community from '../images/community.svg'
+import contact from '../images/contact.svg'
 
 import Card from '../components/NFTCard/Card'
 
-import { BsImages } from 'react-icons/bs'
+import { BsImages, BsInstagram, BsTelegram, BsTwitter } from 'react-icons/bs'
 import { BiImageAdd } from 'react-icons/bi'
 import { HiOutlineUserPlus } from 'react-icons/hi2'
 
@@ -126,7 +128,7 @@ const Home: NextPage = () => {
           <h2 className='text-gray-400 uppercase text-xs'>NFT Items</h2>
           <h3 className='text-2xl md:text-4xl font-semibold text-white'>Discover Items</h3>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5'>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-5'>
           <Card width={'w-auto'} image={hape} />
           <Card width={'w-auto'} image={hape} />
           <Card width={'w-auto'} image={clone} />
@@ -140,10 +142,10 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='mt-20 mx-auto max-w-screen-lg mb-20'>
+      <section className='mt-20 mx-auto max-w-screen-lg px-4 xl:px-0'>
         <div>
           <div className='mb-10'>
-            <h2 className='text-gray-400 uppercase text-xs'>Lazy Minting</h2>
+            <h2 className='text-gray-400 uppercase text-xs mb-2'>Lazy Minting</h2>
             <h3 className='text-2xl md:text-4xl font-semibold text-white'>
               Mint and create your own collection
             </h3>
@@ -186,6 +188,56 @@ const Home: NextPage = () => {
                 </p>
                 <button className='px-4 py-2 mt-5 rounded-full bg-gray-400'>Coming soon</button>
               </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='mx-auto xl:max-w-screen-lg 2xl:max-w-screen-xl mt-20 px-4 xl:px-0 mb-20'>
+        <div className='mb-10'>
+          <h2 className='text-gray-400 uppercase text-xs mb-2'>Greetings</h2>
+          <h3 className='text-2xl md:text-4xl font-semibold text-white'>Say Hi or Reach out 👋🏾</h3>
+        </div>
+
+        <div className='mt-10'>
+          <div className='grid grid-cols-5 gap-5'>
+            <div className='p-10 bg-[#0C0B0F] col-span-5 md:col-span-2 rounded-2xl'>
+              <h2 className='text-2xl font-semibold text-white mb-2'>Our community</h2>
+              <p className='text-gray-400 text-sm'>
+                You can find sneak peeks, check out our upcoming features, chat, share and join our
+                team.
+              </p>
+              <div className='flex space-x-8 items-center mt-8'>
+                <div className='flex items-center justify-center bg-darkGray rounded-full w-16 h-16'>
+                  <BsTwitter className='text-2xl text-gray-500' />
+                </div>
+                <div className='flex items-center justify-center bg-darkGray rounded-full w-16 h-16'>
+                  <BsTelegram className='text-2xl text-gray-500' />
+                </div>
+                <div className='flex items-center justify-center bg-darkGray rounded-full w-16 h-16'>
+                  <BsInstagram className='text-2xl text-gray-500' />
+                </div>
+              </div>
+            </div>
+            <div className='p-10 bg-gradient-to-r from-[#0C0B0F] to-[#181720] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
+              <Image src={community} className='h-[180px]' alt='Join our community' />
+            </div>
+            <div className='p-10 bg-gradient-to-r from-[#0C0B0F] to-[#181720] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
+              <Image src={contact} className='h-[180px]' alt='Contact us' />
+            </div>
+            <div className='p-10 bg-[#0C0B0F] col-span-5 md:col-span-2 rounded-2xl'>
+              <h2 className='text-2xl font-semibold text-white mb-2'>
+                Got Questions or Recommendations
+              </h2>
+              <p className='text-gray-400 text-sm'>
+                Be the first to ask, be the first to let us know. We are always available to attend
+                to you and hear you out
+              </p>
+              <div className='flex space-x-8 items-center mt-8'>
+                <button className='text-gray-400 hover:text-gray-500 font-semibold transition duration-200'>
+                  Contact Us
+                </button>
+              </div>
             </div>
           </div>
         </div>

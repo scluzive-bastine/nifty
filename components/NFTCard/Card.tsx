@@ -19,13 +19,13 @@ const Card = ({ width, image }: Props) => {
           <h2 className='text-white text-lg font-semibold'>Hape Prime</h2>
           <RiShieldCheckFill className='text-blue-400' />
         </div>
-        <div className='flex space-x-5 mt-5'>
+        <div className='flex space-x-3 md:space-x-5 mt-5'>
           <div>
-            <p className='text-gray-400 uppercase text-[10px]'>Day Volume</p>
+            <p className='text-gray-400 uppercase text-[6px] md:text-[10px]'>Day Volume</p>
             <h3 className='text-gray-200 font-semibold text-sm md:text-lg'>234 ETH</h3>
           </div>
           <div>
-            <p className='text-gray-400 uppercase text-[10px]'>Floor Price</p>
+            <p className='text-gray-400 uppercase text-[6px] md:text-[10px]'>Floor Price</p>
             <h3 className='text-gray-200 font-semibold text-sm md:text-lg'>1.2 ETH</h3>
           </div>
         </div>
