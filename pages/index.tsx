@@ -2,21 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import nftbg from '../images/nft.svg'
-import gridbg from '../images/gridbg.svg'
 
 import meshbg from '../images/mesh.svg'
-import punk from '../images/grid/punk.svg'
-import women from '../images/grid/women.svg'
-import hape from '../images/grid/hape.svg'
-import mutant from '../images/grid/mutant.svg'
-import otherdeed from '../images/grid/otherdeed.svg'
-import doddles from '../images/grid/doddles.svg'
-import land from '../images/grid/land.svg'
-import cat from '../images/grid/cat.svg'
-import clone from '../images/grid/clone.svg'
-import meebit from '../images/grid/meebit.svg'
-import n13 from '../images/grid/n13.svg'
-import capsule from '../images/grid/capsule.svg'
+import Grid from '../components/Home/Grid'
 
 const Home: NextPage = () => {
   return (
@@ -61,116 +49,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className='grid-animation relative col-auto lg:col-span-2'>
-          <div className='grid grid-cols-4 gap-5'>
-            <div className='grid-card' style={{ animationDelay: '214.286ms' }}>
-              <Image
-                src={meebit}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-lg 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '428.571ms' }}>
-              <Image
-                src={gridbg}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-lg 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card ' style={{ animationDelay: '641.857ms' }}>
-              <Image
-                src={meshbg}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-lg 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card !opacity-0 delay-[857.143ms]'>
-              <Image
-                src={hape}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '428.571ms' }}>
-              <Image
-                src={women}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '642.857ms' }}>
-              <Image
-                src={cat}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '857.143ms' }}>
-              <Image
-                src={punk}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '1071.43ms' }}>
-              <Image
-                src={clone}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '642.857ms' }}>
-              <Image
-                src={land}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '857.143ms' }}>
-              <Image
-                src={doddles}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '1071.43ms' }}>
-              <Image
-                src={otherdeed}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '1285.71ms' }}>
-              <Image
-                src={mutant}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card !opacity-0 delay-[857.143ms]'>
-              <Image
-                src={meebit}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '1071.43ms' }}>
-              <Image
-                src={hape}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '1285.71ms' }}>
-              <Image
-                src={n13}
-                className='object-cover w-4/5 h-4/5 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl'
-                alt='NFT'
-              />
-            </div>
-            <div className='grid-card' style={{ animationDelay: '1500' }}>
-              <Image src={capsule} className='object-cover w-4/5 h-4/5 rounded-2xl' alt='NFT' />
-            </div>
-          </div>
+          <Grid />
           <div className='grid-lines absolute top-0 left-0 w-full h-full flex rotate-[180deg]'>
             <span className='w-[1px] h-full absolute top-0 left-[calc(25%-20px/4)] bg-[#23212C]'></span>
             <span className='w-[1px] h-full absolute top-0 left-1/2 bg-[#23212C]'></span>
