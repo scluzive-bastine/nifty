@@ -19,7 +19,7 @@ const Grid = () => {
   return (
     <div className='grid grid-cols-4 gap-5'>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '214.286ms' }}
       >
         <Image
@@ -29,7 +29,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '428.571ms' }}
       >
         <Image
@@ -39,7 +39,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)] '
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)] '
         style={{ animationDelay: '641.857ms' }}
       >
         <Image
@@ -56,7 +56,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '428.571ms' }}
       >
         <Image
@@ -66,7 +66,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '642.857ms' }}
       >
         <Image
@@ -76,7 +76,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '857.143ms' }}
       >
         <Image
@@ -86,7 +86,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '1071.43ms' }}
       >
         <Image
@@ -96,7 +96,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '642.857ms' }}
       >
         <Image
@@ -106,7 +106,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '857.143ms' }}
       >
         <Image
@@ -116,7 +116,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '1071.43ms' }}
       >
         <Image
@@ -126,7 +126,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '1285.71ms' }}
       >
         <Image
@@ -143,7 +143,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '1071.43ms' }}
       >
         <Image
@@ -153,7 +153,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '1285.71ms' }}
       >
         <Image
@@ -163,7 +163,7 @@ const Grid = () => {
         />
       </div>
       <div
-        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[90px] 2xl:h-[100px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
+        className='bg-grid-20 rounded-lg md:rounded-2xl xl:rounded-xl 2xl:rounded-2xl relative h-[70px] md:h-[150px] xl:h-[100px] 2xl:h-[130px] flex justify-center items-center p-2 animate-quint ease-[cubic-bezier(.175,.885,.32,1.2)]'
         style={{ animationDelay: '1500' }}
       >
         <Image src={capsule} className='object-cover w-4/5 h-4/5 rounded-2xl' alt='NFT' />
