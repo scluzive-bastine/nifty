@@ -1,21 +1,20 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 
-import nftbg from '../images/nft.svg'
-import meshbg from '../images/mesh.svg'
-import Grid from '../components/Home/Grid'
-import vbg from '../images/vbg.svg'
-import hape from '../images/hape.svg'
-import clone from '../images/clone.svg'
-import community from '../images/community.svg'
-import contact from '../images/contact.svg'
+import Grid from '@/components/Home/Grid'
+import Card from '@/components/NFTCard/Card'
 
-import Card from '../components/NFTCard/Card'
+import nftbg from '@/images/nft.svg'
+import meshbg from '@/images/mesh.svg'
+import vbg from '@/images/vbg.svg'
+import holder from '@/images/holder.svg'
+import community from '@/images/community.svg'
+import contact from '@/images/contact.svg'
 
 import { BsImages, BsInstagram, BsTelegram, BsTwitter } from 'react-icons/bs'
 import { BiImageAdd } from 'react-icons/bi'
 import { HiOutlineUserPlus } from 'react-icons/hi2'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -100,24 +99,24 @@ const Home: NextPage = () => {
           </article>
         </div>
       </section>
-      <section className='mt-20 mx-auto max-w-screen-xl rounded-xl bg-[#0C0B0F] p-5 md:p-8'>
+      <section className='mt-20 mx-auto max-w-screen-xl rounded-xl bg-black-50 p-5 md:p-8'>
         <div className='grid grid-cols-1 md:grid-cols-6 gap-5 items-center'>
           <div className='col-auto md:col-span-2 xl:col-span-1'>
             <h2 className='text-gray-400 uppercase text-xs'>Nifty Marketplace</h2>
             <h3 className='text-2xl md:text-4xl font-semibold text-white'>
               NFT <br /> Collection
             </h3>
-            <button className='bg-orange-20 hover:bg-orange-20/80 text-white font-semibold rounded-full px-8 md:px-10 py-3 mt-5 transition duration-150 ease-in-out'>
-              View more
-            </button>
+            <Link href='/collections'>
+              <button className='bg-orange-20 hover:bg-orange-20/80 text-white font-semibold rounded-full px-8 md:px-10 py-3 mt-5 transition duration-150 ease-in-out'>
+                View All
+              </button>
+            </Link>
           </div>
           <div className='col-auto md:col-span-4 xl:col-span-5'>
             <div className='relative flex space-x-5 touch-pan-x snap-x snap-mandatory snap-center overflow-x-scroll scroll-smooth scrollbar-hide'>
-              <Card width={'w-[280px]'} image={hape} />
-              <Card width={'w-[280px]'} image={clone} />
-              <Card width={'w-[280px]'} image={hape} />
-              <Card width={'w-[280px]'} image={clone} />
-              <Card width={'w-[280px]'} image={clone} />
+              {[1, 2, 3, 4, 5].map((index) => (
+                <Card width={'w-[280px]'} image={holder} key={index} />
+              ))}
             </div>
           </div>
         </div>
@@ -129,16 +128,9 @@ const Home: NextPage = () => {
           <h3 className='text-2xl md:text-4xl font-semibold text-white'>Discover Items</h3>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-5'>
-          <Card width={'w-auto'} image={hape} />
-          <Card width={'w-auto'} image={hape} />
-          <Card width={'w-auto'} image={clone} />
-          <Card width={'w-auto'} image={hape} />
-          <Card width={'w-auto'} image={hape} />
-          <Card width={'w-auto'} image={clone} />
-          <Card width={'w-auto'} image={hape} />
-          <Card width={'w-auto'} image={hape} />
-          <Card width={'w-auto'} image={clone} />
-          <Card width={'w-auto'} image={hape} />
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
+            <Card width={'w-auto'} image={holder} key={index} />
+          ))}
         </div>
       </section>
 
@@ -151,7 +143,7 @@ const Home: NextPage = () => {
             </h3>
           </div>
           <div className='grid grid-cols md:grid-cols-3 gap-10'>
-            <div className='rounded-xl p-5 bg-[#0C0B0F]'>
+            <div className='rounded-xl p-5 bg-black-50'>
               <div className='w-16 h-16 mb-8 bg-darkGray rounded-full flex items-center justify-center'>
                 <HiOutlineUserPlus className='text-2xl text-gray-500' />
               </div>
@@ -163,7 +155,7 @@ const Home: NextPage = () => {
                 <button className='px-4 py-2 mt-5 rounded-full bg-gray-400'>Coming soon</button>
               </article>
             </div>
-            <div className='rounded-xl p-5 bg-[#0C0B0F]'>
+            <div className='rounded-xl p-5 bg-black-50'>
               <div className='w-16 h-16 mb-8 bg-darkGray rounded-full flex items-center justify-center'>
                 <BsImages className='text-2xl text-gray-500' />
               </div>
@@ -176,7 +168,7 @@ const Home: NextPage = () => {
                 <button className='px-4 py-2 mt-5 rounded-full bg-gray-400'>Coming soon</button>
               </article>
             </div>
-            <div className='rounded-xl p-5 bg-[#0C0B0F]'>
+            <div className='rounded-xl p-5 bg-black-50'>
               <div className='w-16 h-16 mb-8 bg-darkGray rounded-full flex items-center justify-center'>
                 <BiImageAdd className='text-2xl text-gray-500' />
               </div>
@@ -201,7 +193,7 @@ const Home: NextPage = () => {
 
         <div className='mt-10'>
           <div className='grid grid-cols-5 gap-5'>
-            <div className='p-10 bg-[#0C0B0F] col-span-5 md:col-span-2 rounded-2xl'>
+            <div className='p-10 bg-black-50 col-span-5 md:col-span-2 rounded-2xl'>
               <h2 className='text-2xl font-semibold text-white mb-2'>Our community</h2>
               <p className='text-gray-400 text-sm'>
                 You can find sneak peeks, check out our upcoming features, chat, share and join our
@@ -225,7 +217,7 @@ const Home: NextPage = () => {
             <div className='p-10 bg-gradient-to-r from-[#0C0B0F] to-[#181720] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
               <Image src={contact} className='h-[180px]' alt='Contact us' />
             </div>
-            <div className='p-10 bg-[#0C0B0F] col-span-5 md:col-span-2 rounded-2xl'>
+            <div className='p-10 bg-black-50 col-span-5 md:col-span-2 rounded-2xl'>
               <h2 className='text-2xl font-semibold text-white mb-2'>
                 Got Questions or Recommendations
               </h2>

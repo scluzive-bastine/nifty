@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image'
-import hape from '../../images/hape.svg'
 
 import { RiShieldCheckFill } from 'react-icons/ri'
 
@@ -16,7 +15,7 @@ const Card = ({ width, image }: Props) => {
       </div>
       <article className='mt-3'>
         <div className='flex space-x-2 items-center'>
-          <h2 className='text-white text-lg font-semibold'>Hape Prime</h2>
+          <h2 className='text-white text-lg font-semibold'>NFT Name</h2>
           <RiShieldCheckFill className='text-blue-400' />
         </div>
         <div className='flex space-x-3 md:space-x-5 mt-5'>

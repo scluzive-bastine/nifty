@@ -35,6 +35,7 @@ module.exports = {
           20: '#F8895B',
         },
         darkGray: '#15141B',
+        'black-50': '#0C0B0F',
         grid: {
           20: '#1E1D26',
         },
