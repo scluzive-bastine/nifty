@@ -28,18 +28,24 @@ const Token = () => {
           <div>
             <h2 className='text-white text-xl lg:text-2xl'>NFT Name</h2>
           </div>
-          <div className='grid grid-cols-2 gap-5 mt-4'>
-            <div className='border border-gray-20 p-3 rounded-xl'>
-              <h4 className='text-gray-400 text-sm'>Creator</h4>
-              <h2 className='text-white text-sm lg:text-xl font-semibold'>0xa51...De87</h2>
+          <div className='grid grid-cols-2 gap-2 lg:gap-5 mt-4'>
+            <div className='border border-gray-20 p-2 lg:p-3 rounded-xl flex space-x-2 items-center'>
+              <div className='h-5 w-5 lg:h-10 lg:w-10 bg-gradient-to-r from-teal-500 via-blue-500 to-blue-900  rounded-full flex-shrink-0'></div>
+              <div>
+                <h4 className='text-gray-400 text-xs lg:text-sm'>Creator</h4>
+                <h2 className='text-white text-sm font-semibold'>0xa51...De87</h2>
+              </div>
             </div>
-            <div className='border border-gray-20 p-3 rounded-xl'>
-              <h4 className='text-gray-400 text-sm'>Owner</h4>
-              <h2 className='text-white text-sm lg:text-xl font-semibold'>0xa51...De87</h2>
+            <div className='border border-gray-20 p-2 lg:p-3 rounded-xl flex space-x-2 items-center'>
+              <div className='h-5 w-5 lg:h-10 lg:w-10 bg-gradient-to-r from-teal-500 via-blue-500 to-blue-900  rounded-full flex-shrink-0'></div>
+              <div>
+                <h4 className='text-gray-400 text-xs lg:text-sm'>Owner</h4>
+                <h2 className='text-white text-sm font-semibold'>0xa51...De87</h2>
+              </div>
             </div>
           </div>
           <div className='mt-4 border border-gray-20 rounded-xl p-3'>
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='grid grid-cols-2 gap-2 lg:gap-5'>
               <div className='bg-black-50 p-3 rounded-xl'>
                 <h4 className='text-gray-400 text-xs lg:text-sm'>Price</h4>
                 <h2 className='text-white text-sm lg:text-xl font-semibold'>112.56 ETH</h2>
