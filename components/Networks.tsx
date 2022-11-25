@@ -5,14 +5,14 @@ const Networks = () => {
   return (
     <div className='bg-black-50 rounded-xl p-3 md:p-5 max-w-screen-xl mt-5'>
       <h2 className='mb-5 text-white'>Blockchains</h2>
-      <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 md:gap-4 max-w-screen-lg'>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+      <div className='flex  touch-pan-x snap-x snap-mandatory snap-center overflow-x-scroll scroll-smooth md:grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 md:gap-4 max-w-screen-lg py-2 scrollbar-hide'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>All Chains</span>
           <span className='absolute -top-1 right-1 w-4 h-4 rounded-full flex items-center justify-center bg-teal-600 '>
             <GiCheckMark className='text-[8px] text-white' />
           </span>
         </button>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Ethereum</span>
           <svg
             fill='none'
@@ -25,7 +25,7 @@ const Networks = () => {
             <path d='M18.527 12.2062L12 16.1938L5.46875 12.2062L12 1L18.527 12.2062ZM12 17.4742L5.46875 13.4867L12 23L18.5312 13.4867L12 17.4742Z'></path>
           </svg>
         </button>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Avalanche</span>
           <svg
             fill='none'
@@ -39,13 +39,13 @@ const Networks = () => {
           </svg>
         </button>
 
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Arbitrum</span>
           <svg fill='none' viewBox='0 0 24 24' className='fill-slate-200 flex-shrink-0 w-5 h-5'>
             <path d='M7.97992 8.7774C8.4494 8.01126 9.47044 7.765 10.4195 7.77796L11.5327 7.80677L4.97152 18.3282L5.74486 18.7732L12.3852 7.81685L15.3202 7.80677L8.6971 19.0397L11.4578 20.6281L11.7876 20.8182C11.9302 20.8744 12.0871 20.8773 12.2326 20.8268L14.8435 19.3133L12.0554 14.9382L13.7577 12.0508L17.4184 17.8213L15.6514 18.8453L19.5354 16.5944L18.1385 17.4037L14.2775 11.1579L15.7609 8.64059L19.75 14.8533V16.145C19.7471 16.3193 19.6679 16.4835 19.5354 16.5958L18.1385 17.4051L17.4184 17.8228L14.8435 19.3147L12.2326 20.8283C12.0886 20.8787 11.9302 20.8758 11.7876 20.8196L8.69854 19.0425L8.06777 20.1126L10.8443 21.7111C10.9365 21.7629 11.0186 21.809 11.0848 21.8479C11.1885 21.9055 11.2591 21.9458 11.285 21.9573C11.5168 22.0596 11.7689 22.1114 12.0223 22.1086C12.2556 22.1086 12.486 22.0653 12.7021 21.9804L20.2871 17.588C20.7206 17.251 20.9813 16.7398 21.0014 16.1911V7.79237C20.9741 7.17744 20.6457 6.61579 20.1244 6.29033L12.8259 2.09383C12.2974 1.83461 11.6796 1.83461 11.1525 2.09383C11.092 2.12407 4.05704 6.20392 4.05704 6.20392C3.95912 6.25144 3.86551 6.30617 3.77766 6.36953C3.31539 6.69932 3.0288 7.22208 3 7.78805V16.4777'></path>
           </svg>
         </button>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Optimism</span>
           <svg
             fill='none'
@@ -59,7 +59,7 @@ const Networks = () => {
             <path d='M12.4202 18.1399C12.2915 18.1399 12.192 18.099 12.1219 18.0171C12.0633 17.9235 12.0459 17.8183 12.0692 17.7013L14.4904 6.29703C14.5138 6.16837 14.5781 6.06308 14.6834 5.98117C14.7887 5.89935 14.8998 5.8584 15.0168 5.8584H19.6838C20.9821 5.8584 22.0231 6.12741 22.8067 6.66543C23.6022 7.20355 23.9998 7.98132 23.9998 8.99893C23.9998 9.29132 23.9648 9.59549 23.8946 9.91125C23.6022 11.2564 23.0115 12.2506 22.1225 12.894C21.2453 13.5373 20.0405 13.8589 18.5082 13.8589H16.1397L15.3326 17.7013C15.3092 17.83 15.2448 17.9352 15.1396 18.0171C15.0343 18.099 14.9232 18.1399 14.8063 18.1399H12.4202ZM18.6311 11.4377C19.1223 11.4377 19.5492 11.3032 19.9118 11.0341C20.2861 10.7651 20.5318 10.3792 20.6487 9.87619C20.6838 9.67731 20.7014 9.50189 20.7014 9.34985C20.7014 9.01062 20.602 8.7533 20.4031 8.57788C20.2042 8.39069 19.8651 8.29718 19.3855 8.29718H17.28L16.6134 11.4377H18.6311Z'></path>
           </svg>
         </button>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Polygon</span>
           <svg
             fill='none'
@@ -72,7 +72,7 @@ const Networks = () => {
             <path d='M17.0436 8.69125C16.6788 8.47701 16.203 8.47701 15.7986 8.69125L12.9437 10.3456L11.0048 11.4247L8.14995 13.0791C7.78516 13.2933 7.30935 13.2933 6.90491 13.0791L4.63689 11.7858C4.2721 11.5715 4.01437 11.1748 4.01437 10.7424V8.19137C4.01437 7.75893 4.23245 7.36616 4.63689 7.14796L6.86923 5.89032C7.23401 5.67608 7.70982 5.67608 8.11426 5.89032L10.3466 7.14796C10.7114 7.36219 10.9691 7.75893 10.9691 8.19137V9.84574L12.908 8.73092V7.07655C12.908 6.64411 12.69 6.25134 12.2855 6.03314L8.15391 3.66068C7.78912 3.44644 7.31331 3.44644 6.90888 3.66068L2.70589 6.03314C2.30145 6.24737 2.08337 6.64411 2.08337 7.07655V11.8572C2.08337 12.2896 2.30145 12.6824 2.70589 12.9006L6.91284 15.273C7.27763 15.4873 7.75344 15.4873 8.15788 15.273L11.0127 13.6544L12.9517 12.5396L15.8065 10.9209C16.1713 10.7067 16.6471 10.7067 17.0516 10.9209L19.2839 12.1785C19.6487 12.3928 19.9064 12.7895 19.9064 13.2219V15.7729C19.9064 16.2054 19.6883 16.5981 19.2839 16.8163L17.0516 18.1097C16.6868 18.3239 16.211 18.3239 15.8065 18.1097L13.5742 16.852C13.2094 16.6378 12.9517 16.2411 12.9517 15.8086V14.1543L11.0127 15.2691V16.9235C11.0127 17.3559 11.2308 17.7487 11.6353 17.9669L15.8422 20.3393C16.207 20.5536 16.6828 20.5536 17.0872 20.3393L21.2942 17.9669C21.659 17.7526 21.9167 17.3559 21.9167 16.9235V12.1428C21.9167 11.7104 21.6986 11.3176 21.2942 11.0994L17.0436 8.69125Z'></path>
           </svg>
         </button>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Solana</span>
           <svg
             fill='none'
@@ -85,7 +85,7 @@ const Networks = () => {
             <path d='M20.8513 16.615L17.898 19.7817C17.8341 19.8505 17.7568 19.9054 17.6707 19.9429C17.5847 19.9805 17.4919 19.9999 17.398 20H3.39807C3.3313 20 3.26599 19.9805 3.21013 19.9439C3.15427 19.9073 3.1103 19.8552 3.08359 19.794C3.05688 19.7328 3.0486 19.6652 3.05976 19.5993C3.07091 19.5335 3.10102 19.4723 3.1464 19.4233L6.09639 16.2567C6.16028 16.1879 6.23763 16.133 6.32366 16.0954C6.40967 16.0579 6.50252 16.0384 6.59639 16.0383H20.5963C20.6637 16.037 20.73 16.0555 20.7868 16.0917C20.8437 16.1279 20.8887 16.1801 20.9158 16.2418C20.9432 16.3034 20.9515 16.3717 20.94 16.4382C20.9285 16.5046 20.8977 16.5661 20.8513 16.615ZM17.898 10.2367C17.8339 10.1682 17.7565 10.1136 17.6705 10.076C17.5845 10.0385 17.4918 10.0189 17.398 10.0184H3.39807C3.3313 10.0184 3.26599 10.0379 3.21013 10.0745C3.15427 10.1111 3.1103 10.1632 3.08359 10.2244C3.05688 10.2856 3.0486 10.3532 3.05976 10.4191C3.07091 10.4849 3.10102 10.5461 3.1464 10.5951L6.09639 13.7634C6.16051 13.8318 6.23793 13.8865 6.32389 13.9241C6.40986 13.9616 6.50259 13.9812 6.59639 13.9817H20.5963C20.663 13.9813 20.728 13.9616 20.7837 13.9249C20.8393 13.8882 20.883 13.8361 20.9095 13.7749C20.936 13.7138 20.9442 13.6463 20.9328 13.5806C20.9217 13.5149 20.8917 13.4539 20.8463 13.405L17.898 10.2367ZM3.39807 7.96171H17.398C17.4919 7.96163 17.5847 7.94218 17.6707 7.90462C17.7568 7.86707 17.8341 7.81217 17.898 7.74338L20.8513 4.57674C20.8977 4.52782 20.9285 4.46629 20.94 4.39987C20.9515 4.33346 20.9432 4.26513 20.9158 4.20349C20.8887 4.14185 20.8437 4.08964 20.7868 4.05345C20.73 4.01725 20.6637 3.99868 20.5963 4.00007H6.59639C6.50252 4.00017 6.40967 4.01961 6.32366 4.05717C6.23763 4.09474 6.16028 4.14962 6.09639 4.21841L3.1464 7.38505C3.10102 7.43403 3.07091 7.4952 3.05976 7.56103C3.0486 7.62687 3.05688 7.69452 3.08359 7.75572C3.1103 7.81692 3.15427 7.869 3.21013 7.90558C3.26599 7.94218 3.3313 7.96168 3.39807 7.96171Z'></path>
           </svg>
         </button>
-        <button className='outline-none flex space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
+        <button className='outline-none flex flex-shrink-0 space-x-2 justify-center text-sm text-gray-400 hover:text-gray-200 transition duration-150 border border-gray-20 p-2 rounded-lg items-center relative'>
           <span>Klaytn</span>
           <svg
             fill='none'
