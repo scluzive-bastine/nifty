@@ -19,7 +19,7 @@ import Link from 'next/link'
 const Home: NextPage = () => {
   return (
     <>
-      <section className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl mt-28 px-4 xl:px-0'>
+      <section className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl mt-10 md:mt-28 px-4 xl:px-0'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
           <div className='col-auto'>
             <div className='flex flex-col space-y-3 md:space-y-4'>
@@ -63,9 +63,11 @@ const Home: NextPage = () => {
               <button className='bg-orange-20 hover:bg-orange-20/80 text-white font-semibold rounded-full px-8 md:px-10 py-3 transition duration-150 ease-in-out'>
                 Discover
               </button>
-              <button className='bg-gray-500 hover:bg-gray-600 text-white font-semibold rounded-full px-8 md:px-10 py-3 transition duration-150 ease-in-out'>
-                Verify NFT
-              </button>
+              <Link href='/verify'>
+                <button className='bg-gray-500 hover:bg-gray-600 text-white font-semibold rounded-full px-8 md:px-10 py-3 transition duration-150 ease-in-out'>
+                  Verify NFT
+                </button>
+              </Link>
             </div>
           </div>
           <div className='grid-animation relative col-auto'>
@@ -211,10 +213,10 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className='p-10 bg-gradient-to-r from-[#0C0B0F] to-[#181720] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
+            <div className='p-10 bg-gradient-to-r from-[#005f87] to-[#0e1b67] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
               <Image src={community} className='h-[180px]' alt='Join our community' />
             </div>
-            <div className='p-10 bg-gradient-to-r from-[#0C0B0F] to-[#181720] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
+            <div className='p-10 bg-gradient-to-r from-[#0b255d] to-[#047663] col-span-5 md:col-span-3 rounded-2xl flex justify-center'>
               <Image src={contact} className='h-[180px]' alt='Contact us' />
             </div>
             <div className='p-10 bg-black-50 col-span-5 md:col-span-2 rounded-2xl'>

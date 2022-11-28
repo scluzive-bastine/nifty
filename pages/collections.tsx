@@ -8,7 +8,7 @@ import Link from 'next/link'
 const collections = () => {
   return (
     <>
-      <header className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl mt-20'>
+      <header className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl mt-10 md:mt-20 px-4'>
         <p className='text-gray-400 uppercase text-xs'>Collection Stats</p>
         <h2 className='text-2xl md:text-4xl font-semibold text-white'>Discover Collections</h2>
         <Networks />

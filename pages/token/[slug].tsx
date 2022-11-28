@@ -4,7 +4,8 @@ import holder from '@/images/holder.svg'
 
 const Token = () => {
   return (
-    <main className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl p-4 mt-20'>
+    <main className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl p-4 mt-10 md:mt-20'>
+      <h2 className='md:hidden text-white text-xl lg:text-2xl mb-3'>NFT Name</h2>
       <section className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-10'>
         <div className='col-auto md:col-span-3'>
           <div className='border border-gray-20 p-3 relative rounded-xl'>
@@ -25,9 +26,7 @@ const Token = () => {
           </div>
         </div>
         <div className='col-auto md:col-span-2'>
-          <div>
-            <h2 className='text-white text-xl lg:text-2xl'>NFT Name</h2>
-          </div>
+          <h2 className='hidden md:block text-white text-xl lg:text-2xl'>NFT Name</h2>
           <div className='grid grid-cols-2 gap-2 lg:gap-5 mt-4'>
             <div className='border border-gray-20 p-2 lg:p-3 rounded-xl flex space-x-2 items-center'>
               <div className='h-5 w-5 lg:h-10 lg:w-10 bg-gradient-to-r from-teal-500 via-blue-500 to-blue-900  rounded-full flex-shrink-0'></div>

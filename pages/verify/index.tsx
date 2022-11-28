@@ -120,6 +120,20 @@ const index = () => {
           </button>
         </div>
       </div>
+
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-4 gap-5'>
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
+          <div className='border border-gray-20 rounded-xl p-2' key={index}>
+            <div className='w-full h-64 rounded-xl bg-black-50'></div>
+            <div className='mt-3'>
+              <div className='h-5 w-1/3 rounded-full bg-black-50 mb-3'></div>
+              <div className='h-3 w-full rounded-full bg-black-50 mb-1'></div>
+              <div className='h-3 w-2/3 rounded-full bg-black-50 mb-1'></div>
+              <div className='h-3 w-4/5 rounded-full bg-black-50 mb-1'></div>
+            </div>
+          </div>
+        ))}
+      </div>
     </main>
   )
 }
