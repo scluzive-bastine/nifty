@@ -2,12 +2,10 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 
 import Grid from '@/components/Home/Grid'
-import Card from '@/components/NFTCard/Card'
 
 import nftbg from '@/images/nft.svg'
 import meshbg from '@/images/mesh.svg'
 import vbg from '@/images/vbg.svg'
-import holder from '@/images/holder.svg'
 import community from '@/images/community.svg'
 import contact from '@/images/contact.svg'
 
@@ -15,8 +13,34 @@ import { BsImages, BsInstagram, BsTelegram, BsTwitter } from 'react-icons/bs'
 import { BiImageAdd } from 'react-icons/bi'
 import { HiOutlineUserPlus } from 'react-icons/hi2'
 import Link from 'next/link'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import CollectionGrid from '@/components/Collections/CollectionGrid'
+import Card from '@/components/NFTCard/Card'
+import holder from '@/images/holder.svg'
 
 const Home: NextPage = () => {
+  const [trendingCollections, setTrendingCollections] = useState(Array)
+  const [isCollectionLoading, setIsCollectionLoading] = useState(true)
+  const URL =
+    'https://mainnet.ethereum.coinbasecloud.net/api/nft/v2/contracts?networkName=ethereum-mainnet&pageSize=2&orderBy=sevendaytradingvolume&page=2'
+
+  const fetchTopCollections = () => {
+    axios
+      .get('/api/collections')
+      .then((res) => {
+        setTrendingCollections(res.data.collections.collectionList)
+        setIsCollectionLoading(false)
+      })
+      .catch((error) => {
+        console.log(error)
+        setIsCollectionLoading(false)
+      })
+  }
+
+  useEffect(() => {
+    fetchTopCollections()
+  }, [])
   return (
     <>
       <section className='mx-auto max-w-screen-lg 2xl:max-w-screen-xl mt-10 md:mt-28 px-4 xl:px-0'>
@@ -116,9 +140,7 @@ const Home: NextPage = () => {
           </div>
           <div className='col-auto md:col-span-4 xl:col-span-5'>
             <div className='relative flex space-x-5 touch-pan-x snap-x snap-mandatory snap-center overflow-x-scroll scroll-smooth scrollbar-hide'>
-              {[1, 2, 3, 4, 5].map((index) => (
-                <Card width={'w-[280px]'} image={holder} key={index} />
-              ))}
+              <CollectionGrid loading={isCollectionLoading} collections={trendingCollections} />
             </div>
           </div>
         </div>
@@ -129,10 +151,10 @@ const Home: NextPage = () => {
           <h2 className='text-gray-400 uppercase text-xs'>NFT Items</h2>
           <h3 className='text-2xl md:text-4xl font-semibold text-white'>Discover Items</h3>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-5'>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
-            <Card width={'w-auto'} image={holder} key={index} />
-          ))}
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5'>
+          {/* {trendingCollections.map((trending: any, index) => (
+            <Card image={holder} width={'w-auto'} key={trending.contractAddress} data={trending} />
+          ))} */}
         </div>
       </section>
 
