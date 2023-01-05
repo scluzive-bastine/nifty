@@ -2,6 +2,7 @@ import Image, { StaticImageData } from 'next/image'
 
 import { RiShieldCheckFill } from 'react-icons/ri'
 import { convertStrAmountToNumber } from '@/utils/functions'
+import holder from '@/images/holder.svg'
 
 interface Props {
   width: String
@@ -32,9 +33,9 @@ const Card = ({ width, data }: Props) => {
     <div className={`bg-darkGray p-3 border border-gray-20 rounded-xl ${width} flex-shrink-0`}>
       <div className='w-full relative'>
         <Image
-          src={data.collectionImageUrl.cachedPathLarge}
-          width={data.collectionImageUrl.width}
-          height={data.collectionImageUrl.height}
+          src={data.collectionImageUrl ? data.collectionImageUrl.cachedPathLarge : holder}
+          width={data.collectionImageUrl ? data.collectionImageUrl.width : 280}
+          height={data.collectionImageUrl ? data.collectionImageUrl.height : 280}
           className='w-full h-full object-cover rounded-xl'
           alt='Hape'
         />

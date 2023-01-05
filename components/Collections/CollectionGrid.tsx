@@ -7,6 +7,8 @@ interface Props {
 }
 
 const CollectionGrid = ({ collections, loading }: Props) => {
+  console.log(collections)
+
   return (
     <>
       {loading
